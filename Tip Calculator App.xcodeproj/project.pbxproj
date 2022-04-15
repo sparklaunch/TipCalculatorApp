@@ -19,8 +19,8 @@
 		907CCAA628091EB20058600D /* TipCalculatorAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipCalculatorAppApp.swift; sourceTree = "<group>"; };
 		907CCAA728091EB20058600D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		907CCAA828091EB30058600D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		907CCAAD28091EB30058600D /* TipCalculatorApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TipCalculatorApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		907CCAB328091EB30058600D /* TipCalculatorApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TipCalculatorApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		907CCAAD28091EB30058600D /* Tip Calculator App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tip Calculator App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		907CCAB328091EB30058600D /* Tip Calculator App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tip Calculator App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		907CCAB528091EB30058600D /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -54,9 +54,9 @@
 		907CCAA528091EB20058600D /* Shared */ = {
 			isa = PBXGroup;
 			children = (
-				907CCAA628091EB20058600D /* TipCalculatorAppApp.swift */,
-				907CCAA728091EB20058600D /* ContentView.swift */,
-				907CCAA828091EB30058600D /* Assets.xcassets */,
+				907CCAC628091ECE0058600D /* Views */,
+				907CCAC528091ECA0058600D /* Models */,
+				907CCAC428091EC20058600D /* App */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -64,8 +64,8 @@
 		907CCAAE28091EB30058600D /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				907CCAAD28091EB30058600D /* TipCalculatorApp.app */,
-				907CCAB328091EB30058600D /* TipCalculatorApp.app */,
+				907CCAAD28091EB30058600D /* Tip Calculator App.app */,
+				907CCAB328091EB30058600D /* Tip Calculator App.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -78,12 +78,36 @@
 			path = macOS;
 			sourceTree = "<group>";
 		};
+		907CCAC428091EC20058600D /* App */ = {
+			isa = PBXGroup;
+			children = (
+				907CCAA628091EB20058600D /* TipCalculatorAppApp.swift */,
+				907CCAA828091EB30058600D /* Assets.xcassets */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		907CCAC528091ECA0058600D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		907CCAC628091ECE0058600D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				907CCAA728091EB20058600D /* ContentView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		907CCAAC28091EB30058600D /* TipCalculatorApp (iOS) */ = {
+		907CCAAC28091EB30058600D /* Tip Calculator App (iOS) */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 907CCABE28091EB30058600D /* Build configuration list for PBXNativeTarget "TipCalculatorApp (iOS)" */;
+			buildConfigurationList = 907CCABE28091EB30058600D /* Build configuration list for PBXNativeTarget "Tip Calculator App (iOS)" */;
 			buildPhases = (
 				907CCAA928091EB30058600D /* Sources */,
 				907CCAAA28091EB30058600D /* Frameworks */,
@@ -93,14 +117,14 @@
 			);
 			dependencies = (
 			);
-			name = "TipCalculatorApp (iOS)";
+			name = "Tip Calculator App (iOS)";
 			productName = "TipCalculatorApp (iOS)";
-			productReference = 907CCAAD28091EB30058600D /* TipCalculatorApp.app */;
+			productReference = 907CCAAD28091EB30058600D /* Tip Calculator App.app */;
 			productType = "com.apple.product-type.application";
 		};
-		907CCAB228091EB30058600D /* TipCalculatorApp (macOS) */ = {
+		907CCAB228091EB30058600D /* Tip Calculator App (macOS) */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 907CCAC128091EB30058600D /* Build configuration list for PBXNativeTarget "TipCalculatorApp (macOS)" */;
+			buildConfigurationList = 907CCAC128091EB30058600D /* Build configuration list for PBXNativeTarget "Tip Calculator App (macOS)" */;
 			buildPhases = (
 				907CCAAF28091EB30058600D /* Sources */,
 				907CCAB028091EB30058600D /* Frameworks */,
@@ -110,9 +134,9 @@
 			);
 			dependencies = (
 			);
-			name = "TipCalculatorApp (macOS)";
+			name = "Tip Calculator App (macOS)";
 			productName = "TipCalculatorApp (macOS)";
-			productReference = 907CCAB328091EB30058600D /* TipCalculatorApp.app */;
+			productReference = 907CCAB328091EB30058600D /* Tip Calculator App.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -133,7 +157,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 907CCAA428091EB20058600D /* Build configuration list for PBXProject "TipCalculatorApp" */;
+			buildConfigurationList = 907CCAA428091EB20058600D /* Build configuration list for PBXProject "Tip Calculator App" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -146,8 +170,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				907CCAAC28091EB30058600D /* TipCalculatorApp (iOS) */,
-				907CCAB228091EB30058600D /* TipCalculatorApp (macOS) */,
+				907CCAAC28091EB30058600D /* Tip Calculator App (iOS) */,
+				907CCAB228091EB30058600D /* Tip Calculator App (macOS) */,
 			);
 		};
 /* End PBXProject section */
@@ -243,6 +267,8 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -295,6 +321,8 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SWIFT_COMPILATION_MODE = wholemodule;
@@ -324,7 +352,7 @@
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = me.kim.jinwook.TipCalculatorApp;
-				PRODUCT_NAME = TipCalculatorApp;
+				PRODUCT_NAME = "Tip Calculator App";
 				SDKROOT = iphoneos;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -354,7 +382,7 @@
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = me.kim.jinwook.TipCalculatorApp;
-				PRODUCT_NAME = TipCalculatorApp;
+				PRODUCT_NAME = "Tip Calculator App";
 				SDKROOT = iphoneos;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -384,7 +412,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 12.3;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = me.kim.jinwook.TipCalculatorApp;
-				PRODUCT_NAME = TipCalculatorApp;
+				PRODUCT_NAME = "Tip Calculator App";
 				SDKROOT = macosx;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -412,7 +440,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 12.3;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = me.kim.jinwook.TipCalculatorApp;
-				PRODUCT_NAME = TipCalculatorApp;
+				PRODUCT_NAME = "Tip Calculator App";
 				SDKROOT = macosx;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -422,7 +450,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		907CCAA428091EB20058600D /* Build configuration list for PBXProject "TipCalculatorApp" */ = {
+		907CCAA428091EB20058600D /* Build configuration list for PBXProject "Tip Calculator App" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				907CCABC28091EB30058600D /* Debug */,
@@ -431,7 +459,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		907CCABE28091EB30058600D /* Build configuration list for PBXNativeTarget "TipCalculatorApp (iOS)" */ = {
+		907CCABE28091EB30058600D /* Build configuration list for PBXNativeTarget "Tip Calculator App (iOS)" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				907CCABF28091EB30058600D /* Debug */,
@@ -440,7 +468,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		907CCAC128091EB30058600D /* Build configuration list for PBXNativeTarget "TipCalculatorApp (macOS)" */ = {
+		907CCAC128091EB30058600D /* Build configuration list for PBXNativeTarget "Tip Calculator App (macOS)" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				907CCAC228091EB30058600D /* Debug */,
