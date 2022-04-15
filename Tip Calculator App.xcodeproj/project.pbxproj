@@ -13,6 +13,7 @@
 		907CCAB928091EB30058600D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 907CCAA728091EB20058600D /* ContentView.swift */; };
 		907CCABA28091EB30058600D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 907CCAA828091EB30058600D /* Assets.xcassets */; };
 		907CCABB28091EB30058600D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 907CCAA828091EB30058600D /* Assets.xcassets */; };
+		907CCAC8280920C20058600D /* BackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 907CCAC7280920C20058600D /* BackgroundView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		907CCAAD28091EB30058600D /* Tip Calculator App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tip Calculator App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		907CCAB328091EB30058600D /* Tip Calculator App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tip Calculator App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		907CCAB528091EB30058600D /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
+		907CCAC7280920C20058600D /* BackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +100,7 @@
 			isa = PBXGroup;
 			children = (
 				907CCAA728091EB20058600D /* ContentView.swift */,
+				907CCAC7280920C20058600D /* BackgroundView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -200,6 +203,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				907CCAC8280920C20058600D /* BackgroundView.swift in Sources */,
 				907CCAB828091EB30058600D /* ContentView.swift in Sources */,
 				907CCAB628091EB30058600D /* TipCalculatorAppApp.swift in Sources */,
 			);
