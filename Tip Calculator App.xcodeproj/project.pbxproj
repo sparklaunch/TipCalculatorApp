@@ -15,6 +15,9 @@
 		907CCABB28091EB30058600D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 907CCAA828091EB30058600D /* Assets.xcassets */; };
 		907CCAC8280920C20058600D /* BackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 907CCAC7280920C20058600D /* BackgroundView.swift */; };
 		907CCACA280921030058600D /* LogoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 907CCAC9280921030058600D /* LogoView.swift */; };
+		907CCACC2809216E0058600D /* CalculatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 907CCACB2809216E0058600D /* CalculatorView.swift */; };
+		907CCACE280921BC0058600D /* BillView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 907CCACD280921BC0058600D /* BillView.swift */; };
+		907CCAD02809233E0058600D /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 907CCACF2809233E0058600D /* Utilities.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,9 @@
 		907CCAB528091EB30058600D /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
 		907CCAC7280920C20058600D /* BackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundView.swift; sourceTree = "<group>"; };
 		907CCAC9280921030058600D /* LogoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoView.swift; sourceTree = "<group>"; };
+		907CCACB2809216E0058600D /* CalculatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorView.swift; sourceTree = "<group>"; };
+		907CCACD280921BC0058600D /* BillView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BillView.swift; sourceTree = "<group>"; };
+		907CCACF2809233E0058600D /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +93,7 @@
 			children = (
 				907CCAA628091EB20058600D /* TipCalculatorAppApp.swift */,
 				907CCAA828091EB30058600D /* Assets.xcassets */,
+				907CCACF2809233E0058600D /* Utilities.swift */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -104,6 +111,8 @@
 				907CCAA728091EB20058600D /* ContentView.swift */,
 				907CCAC7280920C20058600D /* BackgroundView.swift */,
 				907CCAC9280921030058600D /* LogoView.swift */,
+				907CCACB2809216E0058600D /* CalculatorView.swift */,
+				907CCACD280921BC0058600D /* BillView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -207,9 +216,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				907CCAC8280920C20058600D /* BackgroundView.swift in Sources */,
+				907CCACC2809216E0058600D /* CalculatorView.swift in Sources */,
+				907CCAD02809233E0058600D /* Utilities.swift in Sources */,
 				907CCACA280921030058600D /* LogoView.swift in Sources */,
 				907CCAB828091EB30058600D /* ContentView.swift in Sources */,
 				907CCAB628091EB30058600D /* TipCalculatorAppApp.swift in Sources */,
+				907CCACE280921BC0058600D /* BillView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

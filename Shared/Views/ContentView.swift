@@ -13,6 +13,7 @@ struct ContentView: View {
             BackgroundView()
             VStack {
                 LogoView()
+                CalculatorView()
             }
         }
     }
