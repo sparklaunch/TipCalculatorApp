@@ -9,32 +9,17 @@ import SwiftUI
 import Combine
 
 struct BillView: View {
-    @State private var billString: String = ""
-    @FocusState private var isBillAmountTextFieldFocused: Bool
+    @State private var bill: Double = 0
     var body: some View {
         VStack(alignment: .leading) {
             Text("Bill")
                 .font(.title2)
                 .fontWeight(.bold)
                 .foregroundColor(Color("TitleColor"))
-            TextField("Bill Amount", text: $billString)
+            TextField("Bill Amount", value: $bill, format: .number)
                 .textFieldStyle(CalculatorTextFieldStyle())
                 .multilineTextAlignment(.trailing)
-                .keyboardType(.numbersAndPunctuation)
-                .focused($isBillAmountTextFieldFocused)
-                .onChange(of: isBillAmountTextFieldFocused) { isFocused in
-                    if !isFocused {
-                        
-                    }
-                }
-                .onReceive(Just(billString)) { newValue in
-                    let filteredString: String = newValue.filter {
-                        "012345679.".contains($0)
-                    }
-                    if filteredString != newValue {
-                        billString = filteredString
-                    }
-                }
+                .keyboardType(.numberPad)
         }
     }
 }

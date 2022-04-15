@@ -93,7 +93,6 @@
 			children = (
 				907CCAA628091EB20058600D /* TipCalculatorAppApp.swift */,
 				907CCAA828091EB30058600D /* Assets.xcassets */,
-				907CCACF2809233E0058600D /* Utilities.swift */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -101,6 +100,7 @@
 		907CCAC528091ECA0058600D /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				907CCACF2809233E0058600D /* Utilities.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
