@@ -12,7 +12,7 @@ struct BillView: View {
     var body: some View {
         VStack(alignment: .leading) {
             Text("Bill")
-                .font(.title)
+                .font(.title2)
                 .fontWeight(.bold)
                 .foregroundColor(Color("TitleColor"))
             TextField("Bill Amount", text: $billString)

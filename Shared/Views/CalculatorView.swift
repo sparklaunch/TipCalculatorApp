@@ -14,7 +14,9 @@ struct CalculatorView: View {
             VStack {
                 BillView()
             }
+            .padding(24)
         }
+        .fixedSize(horizontal: false, vertical: true)
         .cornerRadius(15)
         .shadow(radius: 10)
     }
@@ -23,6 +25,7 @@ struct CalculatorView: View {
 struct CalculatorView_Previews: PreviewProvider {
     static var previews: some View {
         CalculatorView()
+            .background(Color("BackgroundColor"))
             .previewLayout(.sizeThatFits)
     }
 }
