@@ -14,6 +14,7 @@ struct ResultView: View {
             VStack(spacing: 24) {
                 TipAmountView(amount: "4.27")
                 TotalView(amount: "32.79")
+                ResetButtonView()
             }
             .padding(24)
         }

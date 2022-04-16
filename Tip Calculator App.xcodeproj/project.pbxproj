@@ -25,6 +25,7 @@
 		907CCADA280AAC4F0058600D /* ResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 907CCAD9280AAC4F0058600D /* ResultView.swift */; };
 		907CCADC280AAC830058600D /* TipAmountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 907CCADB280AAC830058600D /* TipAmountView.swift */; };
 		907CCADE280AAC910058600D /* TotalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 907CCADD280AAC910058600D /* TotalView.swift */; };
+		907CCAE0280AAE4B0058600D /* ResetButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 907CCADF280AAE4B0058600D /* ResetButtonView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +47,7 @@
 		907CCAD9280AAC4F0058600D /* ResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultView.swift; sourceTree = "<group>"; };
 		907CCADB280AAC830058600D /* TipAmountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipAmountView.swift; sourceTree = "<group>"; };
 		907CCADD280AAC910058600D /* TotalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TotalView.swift; sourceTree = "<group>"; };
+		907CCADF280AAE4B0058600D /* ResetButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetButtonView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,6 +136,7 @@
 				907CCAD9280AAC4F0058600D /* ResultView.swift */,
 				907CCADB280AAC830058600D /* TipAmountView.swift */,
 				907CCADD280AAC910058600D /* TotalView.swift */,
+				907CCADF280AAE4B0058600D /* ResetButtonView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -249,6 +252,7 @@
 				907CCAD2280AA4400058600D /* TipSelectionView.swift in Sources */,
 				907CCAD8280AAAA80058600D /* NumberOfPeopleView.swift in Sources */,
 				907CCAD4280AA4BE0058600D /* TipView.swift in Sources */,
+				907CCAE0280AAE4B0058600D /* ResetButtonView.swift in Sources */,
 				907CCADC280AAC830058600D /* TipAmountView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
