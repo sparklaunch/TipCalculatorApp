@@ -15,6 +15,7 @@ struct CalculatorView: View {
                 BillView()
                 TipSelectionView()
                 NumberOfPeopleView()
+                ResultView()
             }
             .padding(24)
         }
