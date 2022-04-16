@@ -11,9 +11,16 @@ struct ContentView: View {
     var body: some View {
         ZStack {
             BackgroundView()
-            VStack(spacing: 64) {
-                LogoView()
-                CalculatorView()
+            ScrollView {
+                VStack(spacing: 64) {
+                    LogoView()
+                    CalculatorView()
+                }
+                .padding(.top, 100)
+            }
+            .edgesIgnoringSafeArea(.all)
+            .onAppear {
+                UIScrollView.appearance().bounces = false
             }
         }
     }
