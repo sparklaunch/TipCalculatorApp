@@ -127,18 +127,42 @@
 				907CCAA728091EB20058600D /* ContentView.swift */,
 				907CCAC7280920C20058600D /* BackgroundView.swift */,
 				907CCAC9280921030058600D /* LogoView.swift */,
+				907CCAE1280ACAAB0058600D /* Calculator */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		907CCAE1280ACAAB0058600D /* Calculator */ = {
+			isa = PBXGroup;
+			children = (
+				907CCAE3280ACB150058600D /* Tip */,
+				907CCAE2280ACAEE0058600D /* Result */,
 				907CCACB2809216E0058600D /* CalculatorView.swift */,
 				907CCACD280921BC0058600D /* BillView.swift */,
-				907CCAD1280AA4400058600D /* TipSelectionView.swift */,
-				907CCAD3280AA4BE0058600D /* TipView.swift */,
-				907CCAD5280AA5190058600D /* CustomTipView.swift */,
 				907CCAD7280AAAA80058600D /* NumberOfPeopleView.swift */,
+			);
+			path = Calculator;
+			sourceTree = "<group>";
+		};
+		907CCAE2280ACAEE0058600D /* Result */ = {
+			isa = PBXGroup;
+			children = (
 				907CCAD9280AAC4F0058600D /* ResultView.swift */,
 				907CCADB280AAC830058600D /* TipAmountView.swift */,
 				907CCADD280AAC910058600D /* TotalView.swift */,
 				907CCADF280AAE4B0058600D /* ResetButtonView.swift */,
 			);
-			path = Views;
+			path = Result;
+			sourceTree = "<group>";
+		};
+		907CCAE3280ACB150058600D /* Tip */ = {
+			isa = PBXGroup;
+			children = (
+				907CCAD1280AA4400058600D /* TipSelectionView.swift */,
+				907CCAD3280AA4BE0058600D /* TipView.swift */,
+				907CCAD5280AA5190058600D /* CustomTipView.swift */,
+			);
+			path = Tip;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
