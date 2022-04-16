@@ -22,7 +22,7 @@ struct TipAmountView: View {
                     .foregroundColor(.white.opacity(0.5))
             }
             Spacer()
-            Text(amount, format: .currency(code: "USD"))
+            Text("$\(amount.formatted())")
                 .font(.largeTitle)
                 .fontWeight(.bold)
                 .foregroundColor(Color("ActiveColor"))
