@@ -8,20 +8,20 @@
 import SwiftUI
 
 struct TipView: View {
-    @Binding var activeTipRate: String
-    let text: String
+    @Binding var activeTipRate: Double
+    let tipRate: Double
     private var isActive: Bool {
-        return activeTipRate == text
+        return activeTipRate == tipRate
     }
     var body: some View {
         Button {
             withAnimation(.spring(response: 0.3, dampingFraction: 0.6, blendDuration: .zero)) {
-                activeTipRate = text
+                activeTipRate = tipRate
             }
         } label: {
             ZStack {
                 Color(isActive ? "ActiveColor" : "AccentColor")
-                Text(text)
+                Text(tipRate, format: .percent)
                     .font(.title)
                     .fontWeight(.bold)
                     .foregroundColor(isActive ? Color("AccentColor") : .white)
@@ -35,7 +35,7 @@ struct TipView: View {
 
 struct TipView_Previews: PreviewProvider {
     static var previews: some View {
-        TipView(activeTipRate: .constant("15%"), text: "15%")
+        TipView(activeTipRate: .constant(0.15), tipRate: 0.15)
             .previewLayout(.sizeThatFits)
     }
 }

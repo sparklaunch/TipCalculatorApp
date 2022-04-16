@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct TipAmountView: View {
-    let amount: String
+    let amount: Double
     var body: some View {
         HStack {
             VStack(alignment: .leading, spacing: 8) {
@@ -22,7 +22,7 @@ struct TipAmountView: View {
                     .foregroundColor(.white.opacity(0.5))
             }
             Spacer()
-            Text("$\(amount)")
+            Text(amount, format: .currency(code: "USD"))
                 .font(.largeTitle)
                 .fontWeight(.bold)
                 .foregroundColor(Color("ActiveColor"))
@@ -32,7 +32,7 @@ struct TipAmountView: View {
 
 struct TipAmountView_Previews: PreviewProvider {
     static var previews: some View {
-        TipAmountView(amount: "4.27")
+        TipAmountView(amount: 4.27)
             .background(Color("AccentColor"))
             .previewLayout(.sizeThatFits)
     }

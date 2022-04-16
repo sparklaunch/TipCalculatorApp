@@ -15,7 +15,7 @@ struct NumberOfPeopleView: View {
                 .font(.title2)
                 .fontWeight(.bold)
                 .foregroundColor(Color("TitleColor"))
-            TextField("Number of People", value: $numberOfPeople, format: .number)
+            TextField("Number of People", value: $numberOfPeople, format: .number.sign(strategy: .never))
                 .textFieldStyle(NumberOfPeopleTextFieldStyle())
                 .multilineTextAlignment(.trailing)
                 .keyboardType(.numberPad)

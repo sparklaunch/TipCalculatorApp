@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct TotalView: View {
-    let amount: String
+    let amount: Double
     var body: some View {
         HStack {
             VStack(alignment: .leading, spacing: 8) {
@@ -22,7 +22,7 @@ struct TotalView: View {
                     .foregroundColor(.white.opacity(0.5))
             }
             Spacer()
-            Text("$\(amount)")
+            Text(amount, format: .currency(code: "USD"))
                 .font(.largeTitle)
                 .fontWeight(.bold)
                 .foregroundColor(Color("ActiveColor"))
@@ -32,7 +32,7 @@ struct TotalView: View {
 
 struct TotalView_Previews: PreviewProvider {
     static var previews: some View {
-        TotalView(amount: "32.79")
+        TotalView(amount: 32.79)
             .background(Color("AccentColor"))
             .previewLayout(.sizeThatFits)
     }

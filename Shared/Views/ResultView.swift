@@ -12,8 +12,8 @@ struct ResultView: View {
         ZStack {
             Color("AccentColor")
             VStack(spacing: 24) {
-                TipAmountView(amount: "4.27")
-                TotalView(amount: "32.79")
+                TipAmountView(amount: 4.27)
+                TotalView(amount: 32.79)
                 ResetButtonView()
             }
             .padding(24)

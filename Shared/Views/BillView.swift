@@ -16,7 +16,7 @@ struct BillView: View {
                 .font(.title2)
                 .fontWeight(.bold)
                 .foregroundColor(Color("TitleColor"))
-            TextField("Bill Amount", value: $bill, format: .number)
+            TextField("Bill Amount", value: $bill, format: .number.precision(.fractionLength(2)).sign(strategy: .never))
                 .textFieldStyle(CalculatorTextFieldStyle())
                 .multilineTextAlignment(.trailing)
                 .keyboardType(.numberPad)

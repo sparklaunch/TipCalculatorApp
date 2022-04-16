@@ -10,7 +10,7 @@ import SwiftUI
 struct CustomTipView: View {
     @State private var customTipRate: Double = 0
     var body: some View {
-        TextField("Custom", value: $customTipRate, format: .percent)
+        TextField("Custom", value: $customTipRate, format: .percent.precision(.fractionLength(1)).sign(strategy: .never))
             .textFieldStyle(CustomTipRateTextFieldStyle())
             .multilineTextAlignment(.trailing)
             .keyboardType(.numberPad)

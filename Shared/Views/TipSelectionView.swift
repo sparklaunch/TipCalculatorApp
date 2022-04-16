@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct TipSelectionView: View {
-    @State private var activeTipRate: String = "15%"
+    @State private var activeTipRate: Double = 0.15
     var body: some View {
         VStack(alignment: .leading) {
             Text("Select Tip %")
@@ -17,15 +17,15 @@ struct TipSelectionView: View {
             .foregroundColor(Color("TitleColor"))
             VStack {
                 HStack(spacing: 16) {
-                    TipView(activeTipRate: $activeTipRate, text: "5%")
-                    TipView(activeTipRate: $activeTipRate, text: "10%")
+                    TipView(activeTipRate: $activeTipRate, tipRate: 0.05)
+                    TipView(activeTipRate: $activeTipRate, tipRate: 0.10)
                 }
                 HStack(spacing: 16) {
-                    TipView(activeTipRate: $activeTipRate, text: "15%")
-                    TipView(activeTipRate: $activeTipRate, text: "25%")
+                    TipView(activeTipRate: $activeTipRate, tipRate: 0.15)
+                    TipView(activeTipRate: $activeTipRate, tipRate: 0.25)
                 }
                 HStack(spacing: 16) {
-                    TipView(activeTipRate: $activeTipRate, text: "50%")
+                    TipView(activeTipRate: $activeTipRate, tipRate: 0.50)
                     CustomTipView()
                 }
             }
