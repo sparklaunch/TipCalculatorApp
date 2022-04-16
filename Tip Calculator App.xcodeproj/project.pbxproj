@@ -21,6 +21,7 @@
 		907CCAD2280AA4400058600D /* TipSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 907CCAD1280AA4400058600D /* TipSelectionView.swift */; };
 		907CCAD4280AA4BE0058600D /* TipView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 907CCAD3280AA4BE0058600D /* TipView.swift */; };
 		907CCAD6280AA5190058600D /* CustomTipView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 907CCAD5280AA5190058600D /* CustomTipView.swift */; };
+		907CCAD8280AAAA80058600D /* NumberOfPeopleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 907CCAD7280AAAA80058600D /* NumberOfPeopleView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		907CCAD1280AA4400058600D /* TipSelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipSelectionView.swift; sourceTree = "<group>"; };
 		907CCAD3280AA4BE0058600D /* TipView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipView.swift; sourceTree = "<group>"; };
 		907CCAD5280AA5190058600D /* CustomTipView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTipView.swift; sourceTree = "<group>"; };
+		907CCAD7280AAAA80058600D /* NumberOfPeopleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberOfPeopleView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +124,7 @@
 				907CCAD1280AA4400058600D /* TipSelectionView.swift */,
 				907CCAD3280AA4BE0058600D /* TipView.swift */,
 				907CCAD5280AA5190058600D /* CustomTipView.swift */,
+				907CCAD7280AAAA80058600D /* NumberOfPeopleView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -233,6 +236,7 @@
 				907CCAB628091EB30058600D /* TipCalculatorAppApp.swift in Sources */,
 				907CCACE280921BC0058600D /* BillView.swift in Sources */,
 				907CCAD2280AA4400058600D /* TipSelectionView.swift in Sources */,
+				907CCAD8280AAAA80058600D /* NumberOfPeopleView.swift in Sources */,
 				907CCAD4280AA4BE0058600D /* TipView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

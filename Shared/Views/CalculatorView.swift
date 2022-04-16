@@ -14,6 +14,7 @@ struct CalculatorView: View {
             VStack(spacing: 24) {
                 BillView()
                 TipSelectionView()
+                NumberOfPeopleView()
             }
             .padding(24)
         }

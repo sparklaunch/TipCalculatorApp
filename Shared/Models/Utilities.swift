@@ -34,3 +34,20 @@ struct CustomTipRateTextFieldStyle: TextFieldStyle {
             .cornerRadius(15)
     }
 }
+
+struct NumberOfPeopleTextFieldStyle: TextFieldStyle {
+    func _body(configuration: TextField<Self._Label>) -> some View {
+        return HStack {
+            Image(decorative: "Person")
+                .resizable()
+                .frame(width: 13, height: 16)
+                .padding(.horizontal)
+            configuration
+                .padding()
+                .font(.system(size: 24, weight: .black, design: .monospaced))
+                .foregroundColor(Color("AccentColor"))
+        }
+        .background(Color("TextFieldColor"))
+        .cornerRadius(15)
+    }
+}
