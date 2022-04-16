@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct CustomTipView: View {
-    @State private var customTipRate: Double = 0
+    @Binding var customTipRate: Double
     var body: some View {
         TextField("Custom", value: $customTipRate, format: .percent.precision(.fractionLength(1)).sign(strategy: .never))
             .textFieldStyle(CustomTipRateTextFieldStyle())
@@ -19,7 +19,7 @@ struct CustomTipView: View {
 
 struct CustomTipView_Previews: PreviewProvider {
     static var previews: some View {
-        CustomTipView()
+        CustomTipView(customTipRate: .constant(0))
             .previewLayout(.sizeThatFits)
     }
 }

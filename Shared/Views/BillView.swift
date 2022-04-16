@@ -9,7 +9,7 @@ import SwiftUI
 import Combine
 
 struct BillView: View {
-    @State private var bill: Double = 0
+    @Binding var bill: Double
     var body: some View {
         VStack(alignment: .leading) {
             Text("Bill")
@@ -27,7 +27,7 @@ struct BillView: View {
 
 struct BillView_Previews: PreviewProvider {
     static var previews: some View {
-        BillView()
+        BillView(bill: .constant(0))
             .previewLayout(.sizeThatFits)
     }
 }

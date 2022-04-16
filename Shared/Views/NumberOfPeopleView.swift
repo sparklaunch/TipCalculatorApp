@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct NumberOfPeopleView: View {
-    @State private var numberOfPeople: Int = 1
+    @Binding var numberOfPeople: Int
     var body: some View {
         VStack(alignment: .leading) {
             Text("Number of People")
@@ -25,7 +25,7 @@ struct NumberOfPeopleView: View {
 
 struct NumberOfPeopleView_Previews: PreviewProvider {
     static var previews: some View {
-        NumberOfPeopleView()
+        NumberOfPeopleView(numberOfPeople: .constant(1))
             .previewLayout(.sizeThatFits)
     }
 }

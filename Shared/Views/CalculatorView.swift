@@ -8,14 +8,24 @@
 import SwiftUI
 
 struct CalculatorView: View {
+    @State private var bill: Double = 0
+    @State private var activeTipRate: Double = 0.15
+    @State private var customTipRate: Double = 0
+    @State private var numberOfPeople: Int = 1
+    private var tipAmount: Double {
+        return bill * activeTipRate
+    }
+    private var total: Double {
+        return bill * (1 + activeTipRate) / Double(numberOfPeople)
+    }
     var body: some View {
         ZStack {
             Color.white
             VStack(spacing: 24) {
-                BillView()
-                TipSelectionView()
-                NumberOfPeopleView()
-                ResultView()
+                BillView(bill: $bill)
+                TipSelectionView(activeTipRate: $activeTipRate, customTipRate: $customTipRate)
+                NumberOfPeopleView(numberOfPeople: $numberOfPeople)
+                ResultView(tipAmount: tipAmount, total: total)
             }
             .padding(24)
         }
