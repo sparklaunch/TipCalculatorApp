@@ -11,8 +11,9 @@ struct CalculatorView: View {
     var body: some View {
         ZStack {
             Color.white
-            VStack {
+            VStack(spacing: 24) {
                 BillView()
+                TipSelectionView()
             }
             .padding(24)
         }

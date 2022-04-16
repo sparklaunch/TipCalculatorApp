@@ -16,10 +16,21 @@ struct CalculatorTextFieldStyle: TextFieldStyle {
                 .padding(.horizontal)
             configuration
                 .padding()
-                .font(.system(size: 20, weight: .black, design: .monospaced))
+                .font(.system(size: 24, weight: .black, design: .monospaced))
                 .foregroundColor(Color("AccentColor"))
         }
         .background(Color("TextFieldColor"))
         .cornerRadius(15)
+    }
+}
+
+struct CustomTipRateTextFieldStyle: TextFieldStyle {
+    func _body(configuration: TextField<Self._Label>) -> some View {
+        configuration
+            .padding()
+            .font(.system(size: 24, weight: .bold, design: .monospaced))
+            .foregroundColor(Color("AccentColor"))
+            .background(Color("TextFieldColor"))
+            .cornerRadius(15)
     }
 }

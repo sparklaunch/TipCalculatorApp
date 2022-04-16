@@ -18,6 +18,9 @@
 		907CCACC2809216E0058600D /* CalculatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 907CCACB2809216E0058600D /* CalculatorView.swift */; };
 		907CCACE280921BC0058600D /* BillView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 907CCACD280921BC0058600D /* BillView.swift */; };
 		907CCAD02809233E0058600D /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 907CCACF2809233E0058600D /* Utilities.swift */; };
+		907CCAD2280AA4400058600D /* TipSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 907CCAD1280AA4400058600D /* TipSelectionView.swift */; };
+		907CCAD4280AA4BE0058600D /* TipView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 907CCAD3280AA4BE0058600D /* TipView.swift */; };
+		907CCAD6280AA5190058600D /* CustomTipView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 907CCAD5280AA5190058600D /* CustomTipView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +35,9 @@
 		907CCACB2809216E0058600D /* CalculatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorView.swift; sourceTree = "<group>"; };
 		907CCACD280921BC0058600D /* BillView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BillView.swift; sourceTree = "<group>"; };
 		907CCACF2809233E0058600D /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
+		907CCAD1280AA4400058600D /* TipSelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipSelectionView.swift; sourceTree = "<group>"; };
+		907CCAD3280AA4BE0058600D /* TipView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipView.swift; sourceTree = "<group>"; };
+		907CCAD5280AA5190058600D /* CustomTipView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTipView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +119,9 @@
 				907CCAC9280921030058600D /* LogoView.swift */,
 				907CCACB2809216E0058600D /* CalculatorView.swift */,
 				907CCACD280921BC0058600D /* BillView.swift */,
+				907CCAD1280AA4400058600D /* TipSelectionView.swift */,
+				907CCAD3280AA4BE0058600D /* TipView.swift */,
+				907CCAD5280AA5190058600D /* CustomTipView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -220,8 +229,11 @@
 				907CCAD02809233E0058600D /* Utilities.swift in Sources */,
 				907CCACA280921030058600D /* LogoView.swift in Sources */,
 				907CCAB828091EB30058600D /* ContentView.swift in Sources */,
+				907CCAD6280AA5190058600D /* CustomTipView.swift in Sources */,
 				907CCAB628091EB30058600D /* TipCalculatorAppApp.swift in Sources */,
 				907CCACE280921BC0058600D /* BillView.swift in Sources */,
+				907CCAD2280AA4400058600D /* TipSelectionView.swift in Sources */,
+				907CCAD4280AA4BE0058600D /* TipView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
