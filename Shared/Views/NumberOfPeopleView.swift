@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct NumberOfPeopleView: View {
-    @Binding var numberOfPeople: Int
+    @Binding var numberOfPeople: Double
     var body: some View {
         VStack(alignment: .leading) {
             Text("Number of People")

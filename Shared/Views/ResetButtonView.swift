@@ -8,9 +8,10 @@
 import SwiftUI
 
 struct ResetButtonView: View {
+    let reset: () -> Void
     var body: some View {
         Button {
-
+            reset()
         } label: {
             ZStack {
                 Color("ActiveColor")
@@ -28,7 +29,7 @@ struct ResetButtonView: View {
 
 struct ResetButtonView_Previews: PreviewProvider {
     static var previews: some View {
-        ResetButtonView()
+        ResetButtonView(reset: {})
             .previewLayout(.sizeThatFits)
     }
 }

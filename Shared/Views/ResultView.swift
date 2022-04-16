@@ -10,13 +10,14 @@ import SwiftUI
 struct ResultView: View {
     let tipAmount: Double
     let total: Double
+    let reset: () -> Void
     var body: some View {
         ZStack {
             Color("AccentColor")
             VStack(spacing: 24) {
                 TipAmountView(amount: tipAmount)
                 TotalView(amount: total)
-                ResetButtonView()
+                ResetButtonView(reset: reset)
             }
             .padding(24)
         }
@@ -27,7 +28,7 @@ struct ResultView: View {
 
 struct ResultView_Previews: PreviewProvider {
     static var previews: some View {
-        ResultView(tipAmount: 4.27, total: 32.79)
+        ResultView(tipAmount: 4.27, total: 32.79, reset: {})
             .previewLayout(.sizeThatFits)
     }
 }
