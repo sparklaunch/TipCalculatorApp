@@ -10,6 +10,7 @@ import SwiftUI
 struct TipSelectionView: View {
     @Binding var activeTipRate: Double
     @Binding var customTipRate: Double
+    let isCustomTipRateActivated: Bool
     var body: some View {
         VStack(alignment: .leading) {
             Text("Select Tip %")
@@ -18,15 +19,15 @@ struct TipSelectionView: View {
             .foregroundColor(Color("TitleColor"))
             VStack {
                 HStack(spacing: 16) {
-                    TipView(activeTipRate: $activeTipRate, tipRate: 0.05)
-                    TipView(activeTipRate: $activeTipRate, tipRate: 0.10)
+                    TipView(activeTipRate: $activeTipRate, isCustomTipRateActivated: isCustomTipRateActivated, tipRate: 0.05)
+                    TipView(activeTipRate: $activeTipRate, isCustomTipRateActivated: isCustomTipRateActivated, tipRate: 0.10)
                 }
                 HStack(spacing: 16) {
-                    TipView(activeTipRate: $activeTipRate, tipRate: 0.15)
-                    TipView(activeTipRate: $activeTipRate, tipRate: 0.25)
+                    TipView(activeTipRate: $activeTipRate, isCustomTipRateActivated: isCustomTipRateActivated, tipRate: 0.15)
+                    TipView(activeTipRate: $activeTipRate, isCustomTipRateActivated: isCustomTipRateActivated, tipRate: 0.25)
                 }
                 HStack(spacing: 16) {
-                    TipView(activeTipRate: $activeTipRate, tipRate: 0.50)
+                    TipView(activeTipRate: $activeTipRate, isCustomTipRateActivated: isCustomTipRateActivated, tipRate: 0.50)
                     CustomTipView(customTipRate: $customTipRate)
                 }
             }
@@ -36,7 +37,7 @@ struct TipSelectionView: View {
 
 struct TipSelectionView_Previews: PreviewProvider {
     static var previews: some View {
-        TipSelectionView(activeTipRate: .constant(0.15), customTipRate: .constant(0))
+        TipSelectionView(activeTipRate: .constant(0.15), customTipRate: .constant(0), isCustomTipRateActivated: false)
             .previewLayout(.sizeThatFits)
     }
 }

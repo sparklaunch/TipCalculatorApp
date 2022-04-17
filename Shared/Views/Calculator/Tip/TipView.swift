@@ -9,9 +9,10 @@ import SwiftUI
 
 struct TipView: View {
     @Binding var activeTipRate: Double
+    let isCustomTipRateActivated: Bool
     let tipRate: Double
     private var isActive: Bool {
-        return activeTipRate == tipRate
+        return activeTipRate == tipRate && !isCustomTipRateActivated
     }
     var body: some View {
         Button {
@@ -35,7 +36,7 @@ struct TipView: View {
 
 struct TipView_Previews: PreviewProvider {
     static var previews: some View {
-        TipView(activeTipRate: .constant(0.15), tipRate: 0.15)
+        TipView(activeTipRate: .constant(0.15), isCustomTipRateActivated: false, tipRate: 0.15)
             .previewLayout(.sizeThatFits)
     }
 }

@@ -36,7 +36,7 @@ struct CalculatorView: View {
             Color.white
             VStack(spacing: 24) {
                 BillView(bill: $bill)
-                TipSelectionView(activeTipRate: $activeTipRate, customTipRate: $customTipRate)
+                TipSelectionView(activeTipRate: $activeTipRate, customTipRate: $customTipRate, isCustomTipRateActivated: isCustomTipRateActivated)
                 NumberOfPeopleView(numberOfPeople: $numberOfPeople)
                 ResultView(tipAmount: tipAmount, total: total, reset: reset)
             }
