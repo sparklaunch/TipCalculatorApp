@@ -9,6 +9,7 @@ import SwiftUI
 import Combine
 
 struct BillView: View {
+    @FocusState var isBillFocused: Bool
     @Binding var bill: Double
     var body: some View {
         VStack(alignment: .leading) {
@@ -20,6 +21,13 @@ struct BillView: View {
                 .textFieldStyle(CalculatorTextFieldStyle())
                 .multilineTextAlignment(.trailing)
                 .keyboardType(.numberPad)
+                .focused($isBillFocused)
+                .overlay(
+                    RoundedRectangle(cornerRadius: 15)
+                        .strokeBorder(Color("ActiveColor"), lineWidth: 3)
+                        .opacity(isBillFocused ? 1 : .zero)
+                        .animation(.default, value: isBillFocused)
+                )
         }
     }
 }

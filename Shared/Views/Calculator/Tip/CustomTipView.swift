@@ -8,12 +8,20 @@
 import SwiftUI
 
 struct CustomTipView: View {
+    @FocusState private var isCustomFocused: Bool
     @Binding var customTipRate: Double
     var body: some View {
         TextField("Custom", value: $customTipRate, format: .percent.precision(.fractionLength(1)).sign(strategy: .never))
             .textFieldStyle(CustomTipRateTextFieldStyle())
             .multilineTextAlignment(.trailing)
             .keyboardType(.numberPad)
+            .focused($isCustomFocused)
+            .overlay(
+                RoundedRectangle(cornerRadius: 15)
+                    .strokeBorder(Color("ActiveColor"), lineWidth: 3)
+                    .opacity(isCustomFocused ? 1 : .zero)
+                    .animation(.default, value: isCustomFocused)
+            )
     }
 }
 

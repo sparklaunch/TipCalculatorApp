@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct NumberOfPeopleView: View {
+    @FocusState private var isNumberOfPeopleFocused: Bool
     @Binding var numberOfPeople: Double
     var body: some View {
         VStack(alignment: .leading) {
@@ -19,6 +20,13 @@ struct NumberOfPeopleView: View {
                 .textFieldStyle(NumberOfPeopleTextFieldStyle())
                 .multilineTextAlignment(.trailing)
                 .keyboardType(.numberPad)
+                .focused($isNumberOfPeopleFocused)
+                .overlay(
+                    RoundedRectangle(cornerRadius: 15)
+                        .strokeBorder(Color("ActiveColor"), lineWidth: 3)
+                        .opacity(isNumberOfPeopleFocused ? 1 : .zero)
+                        .animation(.default, value: isNumberOfPeopleFocused)
+                )
         }
     }
 }
