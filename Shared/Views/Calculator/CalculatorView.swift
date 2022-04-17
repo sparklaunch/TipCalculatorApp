@@ -12,11 +12,24 @@ struct CalculatorView: View {
     @State private var activeTipRate: Double = 0.15
     @State private var customTipRate: Double = 0
     @State private var numberOfPeople: Double = 1
+    private var isCustomTipRateActivated: Bool {
+        return customTipRate != 0
+    }
     private var tipAmount: Double {
-        return bill * activeTipRate
+        if isCustomTipRateActivated {
+            return bill * customTipRate
+        }
+        else {
+            return bill * activeTipRate
+        }
     }
     private var total: Double {
-        return bill * (1 + activeTipRate) / Double(numberOfPeople)
+        if isCustomTipRateActivated {
+            return bill * (1 + customTipRate) / Double(numberOfPeople)
+        }
+        else {
+            return bill * (1 + activeTipRate) / Double(numberOfPeople)
+        }
     }
     var body: some View {
         ZStack {
