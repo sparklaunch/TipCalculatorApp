@@ -9,6 +9,9 @@ import SwiftUI
 
 struct TotalView: View {
     let amount: Double
+    private var amountString: String {
+        return String(format: "$%.2f", amount)
+    }
     var body: some View {
         HStack {
             VStack(alignment: .leading, spacing: 8) {
@@ -22,7 +25,7 @@ struct TotalView: View {
                     .foregroundColor(.white.opacity(0.5))
             }
             Spacer()
-            Text("$\(amount.formatted())")
+            Text(amountString)
                 .font(.largeTitle)
                 .fontWeight(.bold)
                 .foregroundColor(Color("ActiveColor"))
